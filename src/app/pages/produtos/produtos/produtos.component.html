@@ -1,16 +1,22 @@
 <div class="alert alert-primary" role="alert">
 {{titulotable}}
 </div>
-<table
-  id="table"
-  data-toggle="table"
-  data-flat="true"
-  data-search="true"
-  data-url="../../../../../api.json">
+
+<table class="table">
   <thead>
     <tr>
-      <th data-field="produtos.id" data-sortable="true">Id</th>
-      <th data-field="produtos.nome" data-sortable="true">Nome</th>
+      <th scope="col">#</th>
+      <th scope="col">nome</th>
+      
     </tr>
   </thead>
+  <tbody>
+      @for (produto of produtos; track $index) {
+      <tr>
+        <th scope="row">{{produto.id}}</th>      
+        <td>{{produto.nome}}</td>
+        
+      </tr>
+    }
+  </tbody>
 </table>
