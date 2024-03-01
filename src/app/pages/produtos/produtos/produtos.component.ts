@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProdutosService } from '../../../services/produtos.service';
 
 @Component({
   selector: 'app-produtos',
@@ -8,5 +9,13 @@ import { Component } from '@angular/core';
   styleUrl: './produtos.component.css'
 })
 export class PageProdutosComponent {
+  titulotable: string = "Produtos"
+  constructor(private produtoService: ProdutosService) {}
+
+  ngOnInit() {
+    this.produtoService.buscarTodosProdutos().subscribe(produtos => {
+      console.log(produtos);      
+    })
+  }
 
 }

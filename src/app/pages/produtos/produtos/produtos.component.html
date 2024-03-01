@@ -1,1 +1,16 @@
-<p>produtos works!</p>
+<div class="alert alert-primary" role="alert">
+{{titulotable}}
+</div>
+<table
+  id="table"
+  data-toggle="table"
+  data-flat="true"
+  data-search="true"
+  data-url="../../../../../api.json">
+  <thead>
+    <tr>
+      <th data-field="produtos.id" data-sortable="true">Id</th>
+      <th data-field="produtos.nome" data-sortable="true">Nome</th>
+    </tr>
+  </thead>
+</table>
