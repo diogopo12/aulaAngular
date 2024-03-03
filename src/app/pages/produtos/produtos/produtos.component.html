@@ -2,21 +2,4 @@
 {{titulotable}}
 </div>
 
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">nome</th>
-      
-    </tr>
-  </thead>
-  <tbody>
-      @for (produto of produtos; track $index) {
-      <tr>
-        <th scope="row">{{produto.id}}</th>      
-        <td>{{produto.nome}}</td>
-        
-      </tr>
-    }
-  </tbody>
-</table>
+<app-produtos />
