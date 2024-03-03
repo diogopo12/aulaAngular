@@ -10,5 +10,5 @@ import { ProdutosComponent } from '../../../components/produtos/produtos.compone
   styleUrl: './produtos.component.css'
 })
 export class PageProdutosComponent {
-  titulotable: string = "Produtos"
+
 }

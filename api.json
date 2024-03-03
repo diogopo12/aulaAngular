@@ -1,13 +1,46 @@
 {
-    "produtos":[
-        {
-            "id": 1,
-            "nome": "Celular"
-        },
-        {
-            "id": 2,
-            "nome": "Computador"
-        }
-    ]
-    
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Celular Nokia",
+      "status": 0,
+      "preco": 2000,
+      "moeda": "R$"
+    },
+    {
+      "id": "2",
+      "nome": "Computador Dell",
+      "status": 1,
+      "preco": 1000,
+      "moeda": "US$"
+    },
+    {
+      "id": "3",
+      "nome": "Monitor FullHD",
+      "status": true,
+      "preco": 1220.07,
+      "moeda": "R$"
+    },
+    {
+      "id": "4",
+      "nome": "Teclado Gamer",
+      "status": true,
+      "preco": 500,
+      "moeda": "US$"
+    },
+    {
+      "id": "5",
+      "nome": "Mouse Gamer",
+      "status": true,
+      "preco": 400,
+      "moeda": "R$"
+    },
+    {
+      "id": 6,
+      "nome": "Caneta preta",
+      "status": false,
+      "preco": 5,
+      "moeda": "R$"
+    }
+  ]
 }

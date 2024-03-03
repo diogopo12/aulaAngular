@@ -9,7 +9,14 @@ export class ProdutosService {
 
   constructor(private http: HttpClient) {   }
 
+  apiurl = 'http://localhost:3000/produtos'
+
   buscarTodosProdutos(){
-    return this.http.get<IProduto[]>('http://localhost:3000/produtos')
+    return this.http.get<IProduto[]>(this.apiurl)
+  }
+
+  cadastroProduto(produto: IProduto){
+    console.log("Service função")
+    return this.http.post(this.apiurl,produto)
   }
 }

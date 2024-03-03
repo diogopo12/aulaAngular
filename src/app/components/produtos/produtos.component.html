@@ -1,10 +1,11 @@
-oi
-<table class="table">
-    <thead>
+<table class="table table-striped">
+    <thead class="table-light">
       <tr>
-        <th scope="col">#</th>
-        <th scope="col">nome</th>
-        
+        <th scope="col">Id</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Status</th>
+        <th scope="col">Preço</th>
+        <th scope="col">Ações</th>
       </tr>
     </thead>
     <tbody>
@@ -12,6 +13,18 @@ oi
         <tr>
           <th scope="row">{{produto.id}}</th>      
           <td>{{produto.nome}}</td>
+          <td>{{produto.status ? "Ativo":"Inativo"}}</td>
+          <td>{{produto.moeda}} {{produto.preco}}</td>
+          <td>
+            @if (permission == "writing"){
+
+            <button type="button" class="btn btn-danger btn-sm" >Deletar</button>
+            <button type="button" class="btn btn-secondary btn-sm ms-2" >Editar</button>
+            }@else{
+                <button type="button" class="btn btn-danger btn-sm" disabled>Deletar</button>
+                <button type="button" class="btn btn-secondary btn-sm ms-2" disabled>Editar</button>
+            }
+          </td>
           
         </tr>
       }
@@ -19,3 +32,4 @@ oi
     
   </table>
   
+  <button class="btn btn-primary" routerLink="/produtos/cadastro">Novo produto</button>
