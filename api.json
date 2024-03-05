@@ -16,30 +16,23 @@
     },
     {
       "id": "3",
-      "nome": "Monitor FullHD",
+      "nome": "Caneta preta",
       "status": true,
-      "preco": 1220.07,
+      "preco": 5,
       "moeda": "R$"
     },
     {
       "id": "4",
-      "nome": "Teclado Gamer",
+      "nome": "Monitor FullHD",
       "status": true,
-      "preco": 500,
-      "moeda": "US$"
-    },
-    {
-      "id": "5",
-      "nome": "Mouse Gamer",
-      "status": true,
-      "preco": 400,
+      "preco": 670,
       "moeda": "R$"
     },
     {
-      "id": 6,
-      "nome": "Caneta preta",
+      "id": "5",
+      "nome": "Monitor FullHD Acer",
       "status": false,
-      "preco": 5,
+      "preco": 67262,
       "moeda": "R$"
     }
   ]
