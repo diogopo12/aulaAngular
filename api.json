@@ -25,14 +25,14 @@
       "id": "4",
       "nome": "Monitor FullHD",
       "status": true,
-      "preco": 670,
+      "preco": 1318,
       "moeda": "R$"
     },
     {
       "id": "5",
-      "nome": "Monitor FullHD Acer",
+      "nome": "Caneta Bic preta",
       "status": false,
-      "preco": 67262,
+      "preco": "5",
       "moeda": "R$"
     }
   ]

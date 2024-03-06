@@ -19,8 +19,8 @@ export class ProdutosService {
 
    
   
-  buscarProdutosID(id: string){
-    return this.http.get<IProduto>(this.apiurl+'/'+id)
+  buscarProdutoID(id: any){
+    return this.http.get<IProduto>(`${this.apiurl}/${id}`)
   }
 
   cadastroProduto(produto: IProduto){
@@ -29,11 +29,11 @@ export class ProdutosService {
   }
   
   deleteProduto(produto:IProduto){
-    return this.http.delete(this.apiurl+'/'+produto.id);
+    return this.http.delete(`${this.apiurl}/${produto.id}`);
   }
   
   updateProduto(produto:IProduto){
-    return this.http.put(this.apiurl+'/'+produto.id,produto);
+    return this.http.put(`${this.apiurl}/${produto.id}`,produto);
   }
 
 

@@ -7,5 +7,7 @@ import { PageCadastroProdutosComponent } from './pages/produtos/cadastro-produto
 export const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'produtos', component: PageProdutosComponent},
-    { path: 'produtos/cadastro', component: PageCadastroProdutosComponent}
+    { path: 'produtos/cadastro', component: PageCadastroProdutosComponent},
+    { path: 'produtos/editar/:id', component: PageCadastroProdutosComponent}
+
 ];

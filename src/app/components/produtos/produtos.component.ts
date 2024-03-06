@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { ProdutosService } from '../../services/produtos.service';
 import { NgFor,NgIf } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { RouterLink, RouterModule } from '@angular/router';
 import { IProduto } from '../../interfaces/produto';
 import { PageCadastroProdutosComponent } from '../../pages/produtos/cadastro-produtos/cadastro-produtos.component';
 import Swal from 'sweetalert2';
@@ -9,7 +9,7 @@ import Swal from 'sweetalert2';
 @Component({
   selector: 'app-produtos',
   standalone: true,
-  imports: [NgFor,NgIf,RouterModule,PageCadastroProdutosComponent],
+  imports: [NgFor,NgIf,RouterModule,PageCadastroProdutosComponent,RouterLink],
   templateUrl: './produtos.component.html',
   styleUrl: './produtos.component.css'
 })
