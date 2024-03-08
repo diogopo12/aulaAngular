@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { CurrencyPipe } from '@angular/common'
 import { ProdutosService } from '../../services/produtos.service';
 import { NgFor,NgIf } from '@angular/common';
 import { RouterLink, RouterModule } from '@angular/router';
@@ -9,7 +10,7 @@ import Swal from 'sweetalert2';
 @Component({
   selector: 'app-produtos',
   standalone: true,
-  imports: [NgFor,NgIf,RouterModule,PageCadastroProdutosComponent,RouterLink],
+  imports: [NgFor,NgIf,RouterModule,PageCadastroProdutosComponent,RouterLink,CurrencyPipe],
   templateUrl: './produtos.component.html',
   styleUrl: './produtos.component.css'
 })
